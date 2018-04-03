@@ -18,7 +18,7 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 VOCAB_FILE="/home/pi/project2/model_data/word_counts.txt"
 MODEL_FILE="/home/pi/project2/model_data/model.ckpt-2000000"
 
-def generateCaption(filepath):
+def generateCaption(filepath, tf_sess):
   # Build the inference graph.
   g = tf.Graph()
   with g.as_default():
