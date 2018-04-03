@@ -34,7 +34,7 @@ def uploadPicture(filename, caption, coords):
   print("Uploading " + filename + " to AWS Server")
   
   print("coords: "+coords)
-  headers = {'caption': caption, 'coordinates': '123,123'} 
+  headers = {'caption': caption, 'coordinates': coords} 
   files = {'file': open(filePath, 'rb')}
   url = SERVER_URL
 
